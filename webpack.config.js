@@ -16,7 +16,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,//расширения фаилов пропускаемые через загрузчик
                 exclude: /node_modules/,//не трогаем эту папку
-                loader: 'babel-loader'//загрузчик
+                loader: 'react-hot-loader!babel-loader'//загрузчик
             },
             {
                 test: /\.scss/,//расширения фаилов пропускаемые через загрузчик
