@@ -17,6 +17,10 @@ module.exports = {
                 test: /\.jsx?$/,//расширения фаилов пропускаемые через загрузчик
                 exclude: /node_modules/,//не трогаем эту папку
                 loader: 'babel-loader'//загрузчик
+            },
+            {
+                test: /\.scss/,//расширения фаилов пропускаемые через загрузчик
+                loader: 'style-loader!css-loader!sass-loader'//загрузчик
             }
         ]
     },
